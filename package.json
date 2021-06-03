@@ -1,0 +1,21 @@
+{
+  "name": "readandspeech",
+  "version": "0.0.2",
+  "description": "Read a text",
+  "main": "src/ReadAndSpeech.js",
+  "directories": {
+    "test": "test"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "contact@forelse.info",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/node": "^7.14.2",
+    "@babel/preset-env": "^7.14.4",
+    "jest": "^27.0.4"
+  }
+}
