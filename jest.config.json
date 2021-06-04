@@ -11,5 +11,6 @@
   "testRegex": "((\\.|/*.)(spec))\\.js?$",
   "globals" :{
     "window": {}
-  }
+  },
+  "setupFilesAfterEnv": ["./jest.setup.js"]
 }

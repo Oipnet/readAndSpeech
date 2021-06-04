@@ -1,8 +1,8 @@
+import ReadAndSpeechNotAVoice from './exceptions/ReadAndSpeechNotAVoice'
 import ReadAndSpeechNotSupported from './exceptions/ReadAndSpeechNotSupported'
 
 class ReadAndSpeech {
   constructor() {
-    console.log('it\'s my local')
     if (! ('speechSynthesis' in window)) {
       throw new ReadAndSpeechNotSupported('speechSynthesis is not supported on your browser')
     }
@@ -24,7 +24,11 @@ class ReadAndSpeech {
   }
 
   changeVoice(voice) {
-    this.synthesis.voice = voice
+    try {
+      this.synthesis.voice = voice
+    } catch (e) {
+      throw new ReadAndSpeechNotAVoice('voice parameter is not a SpeechSynthesisVoice')
+    }
   }
 
   currentVoice() {

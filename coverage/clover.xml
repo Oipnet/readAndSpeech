@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1622721105296" clover="3.2.0">
-  <project timestamp="1622721105296" name="All files">
-    <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3" elements="12" coveredelements="12" complexity="0" loc="7" ncloc="7" packages="2" files="2" classes="2"/>
+<coverage generated="1622800465713" clover="3.2.0">
+  <project timestamp="1622800465713" name="All files">
+    <metrics statements="16" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="6" elements="26" coveredelements="21" complexity="0" loc="16" ncloc="16" packages="2" files="3" classes="3"/>
     <package name="src">
-      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-      <file name="ReadAndSpeech.js" path="/Users/arnaud/ReadAndSpeech/src/ReadAndSpeech.js">
-        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-        <line num="5" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
+      <metrics statements="12" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="4"/>
+      <file name="ReadAndSpeech.js" path="/Users/arnaud/Lab/ReadAndSpeech/src/ReadAndSpeech.js">
+        <metrics statements="12" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="4"/>
+        <line num="6" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.exceptions">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="ReadAndSpeechNotSupported.js" path="/Users/arnaud/ReadAndSpeech/src/exceptions/ReadAndSpeechNotSupported.js">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="ReadAndSpeechNotAVoice.js" path="/Users/arnaud/Lab/ReadAndSpeech/src/exceptions/ReadAndSpeechNotAVoice.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+      <file name="ReadAndSpeechNotSupported.js" path="/Users/arnaud/Lab/ReadAndSpeech/src/exceptions/ReadAndSpeechNotSupported.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
