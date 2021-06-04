@@ -1,6 +1,6 @@
 {
   "name": "readandspeech",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Read a text",
   "main": "src/ReadAndSpeech.js",
   "directories": {
