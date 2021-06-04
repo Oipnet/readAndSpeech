@@ -10,12 +10,19 @@
   "scripts": {
     "test": "jest"
   },
-  "author": "contact@forelse.info",
+  "author": "Arnaud POINTET <contact@forelse.info>",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.14.3",
     "@babel/node": "^7.14.2",
     "@babel/preset-env": "^7.14.4",
     "jest": "^27.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Oipnet/readAndSpeech"
+  },
+  "bugs": {
+    "url": "https://github.com/Oipnet/readAndSpeech/issues"
   }
 }
