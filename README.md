@@ -9,7 +9,8 @@ Use npm to install the library.
 ```
 npm install readandspeech
 ```
-Usage
+
+## Usage
 ```javascript
 import ReadAndSpeech from 'readandspeech'
 
@@ -20,6 +21,16 @@ document.querySelector('button').addEventListener('click', (e) => {
   readAndSpeech.speak('Hello world')
 })
 ```
+
+You can enable a emoji parser with the parameter translateEmoji. Default value is false.
+Translator is based on [emojilib](https://github.com/muan/emojilib)
+```javascript
+import ReadAndSpeech from 'readandspeech'
+
+const readAndSpeech = new ReadAndSpeech({
+  translateEmoji: true
+}) // Initialise reader
+````
 
 ## Contribute
 You can contribute to improve the project.

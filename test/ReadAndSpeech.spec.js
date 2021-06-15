@@ -9,6 +9,18 @@ describe('ReadAndSpeech', () => {
     }).toThrowError(ReadAndSpeechNotSupported)
   })
 
+  test('It should override default options in the contoller', () => {
+    global.SpeechSynthesisUtterance = jest.fn()
+
+    window.speechSynthesis = {
+      speak: jest.fn(() => 'Read the message')
+    }
+
+    const readAndSpeech = new ReadAndSpeech({translateEmoji: true})
+
+    expect(readAndSpeech.options.translateEmoji).toBe(true)
+  })
+
   test('It should instance the ReadAndSpeech object', () => {
     // Mock spreechSynthesis method
     window.speechSynthesis = {
@@ -41,5 +53,19 @@ describe('ReadAndSpeech', () => {
     expect(() => {
       readAndSpeech.changeVoice('not a voice')
     }).toThrowError(ReadAndSpeechNotAVoice)
+  })
+
+  test('It should transform emoji if translateEmoji is true', () => {
+    global.SpeechSynthesisUtterance = jest.fn()
+
+    window.speechSynthesis = {
+      speak: jest.fn(() => 'Read the message')
+    }
+
+    const readAndSpeech = new ReadAndSpeech({translateEmoji: true})
+
+    const msg = readAndSpeech.parse('Bonjour 🤦')
+
+    expect(msg).toBe('Bonjour person facepalming')
   })
 })

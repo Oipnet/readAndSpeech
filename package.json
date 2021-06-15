@@ -31,5 +31,8 @@
     "speech",
     "text-to-speech",
     "SpeechSynthesis"
-  ]
+  ],
+  "dependencies": {
+    "emojilib": "^3.0.2"
+  }
 }
